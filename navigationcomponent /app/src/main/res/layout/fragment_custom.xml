@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/border_edittext"
+    android:backgroundTint="#4800BCD4"
+    tools:context=".ui.custom.CustomFragment">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:textSize="25dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/border_edittext"
+        android:backgroundTint="#00BCD4"
+        android:textColor= "#FF5722"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/tv_hobibir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#FF5722"
+        android:text="Tenisi sever misin?" />
+
+    <EditText
+        android:id="@+id/cevap1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:ems="10"
+        android:textColor="#00BCD4"
+        android:background="@drawable/border_edittext"
+        android:backgroundTint="#DDE5E6"
+        android:hint="evet/hayır"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/tv_hobiiki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#FF5722"
+        android:text="Basketbolu Sever misin?" />
+
+    <EditText
+        android:id="@+id/cevap2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:ems="10"
+        android:textColor="#00BCD4"
+        android:background="@drawable/border_edittext"
+        android:backgroundTint="#DDE5E6"
+        android:hint="evet/hayır"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/tv_hobiuc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="27dp"
+        android:textColor="#FF5722"
+        android:text="Voleybolu sever misin?" />
+
+    <EditText
+        android:id="@+id/cevap3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:ems="10"
+        android:textColor="#00BCD4"
+        android:background="@drawable/border_edittext"
+        android:backgroundTint="#DDE5E6"
+        android:hint="evet/hayır"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/butonsonraki2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="250dp"
+        android:backgroundTint="#00BCD4"
+        android:text="Sonuç Sayfası"
+        tools:layout_editor_absoluteX="151dp"
+        tools:layout_editor_absoluteY="533dp" />
+
+
+    />
+
+</LinearLayout>

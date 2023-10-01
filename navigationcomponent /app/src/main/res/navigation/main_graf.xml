@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graf"
+    app:startDestination="@id/anasayfaFragment">
+
+    <fragment
+        android:id="@+id/anasayfaFragment"
+        android:name="com.maslan.navigationcomponent.ui.anasayfa.AnasayfaFragment"
+        android:label="fragment_anasayfa"
+        tools:layout="@layout/fragment_anasayfa">
+        <action
+            android:id="@+id/anasayfaTobilgiler"
+            app:destination="@id/kisiselBilgilerFragment"
+            app:popUpTo="@id/anasayfaFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/kisiselBilgilerFragment"
+        android:name="com.maslan.navigationcomponent.ui.kisiselbilgiler.KisiselBilgilerFragment"
+        android:label="fragment_kisisel_bilgiler"
+        tools:layout="@layout/fragment_kisisel_bilgiler">
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_kisiselBilgilerFragment_to_customFragment"
+            app:destination="@id/customFragment"
+            app:popUpTo="@id/kisiselBilgilerFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/customFragment"
+        android:name="com.maslan.navigationcomponent.ui.custom.CustomFragment"
+        android:label="fragment_custom"
+        tools:layout="@layout/fragment_custom">
+        <argument
+            android:name="information"
+            app:argType="com.maslan.navigationcomponent.data.model.KisiselBilgiModel" />
+        <action
+            android:id="@+id/action_customFragment_to_sonucEkraniFragment"
+            app:destination="@id/sonucEkraniFragment"
+            app:popUpTo="@id/customFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/sonucEkraniFragment"
+        android:name="com.maslan.navigationcomponent.ui.sonucekrani.SonucEkraniFragment"
+        android:label="fragment_sonuc_ekrani"
+        tools:layout="@layout/fragment_sonuc_ekrani">
+        <argument
+            android:name="sorular"
+            app:argType="com.maslan.navigationcomponent.data.model.SorularModel" />
+        <action
+            android:id="@+id/sonucToanasayfa"
+            app:destination="@id/anasayfaFragment" />
+    </fragment>
+</navigation>
